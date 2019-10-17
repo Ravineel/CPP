@@ -29,6 +29,12 @@ int main(){
    }
 
 
+/*
+for set to store data in descening order
+we do set<data_type,greater<data_type>> set_name
+*/
+set<int, greater<int>>a;
+
    
 
 
