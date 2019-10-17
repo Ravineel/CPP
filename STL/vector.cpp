@@ -14,7 +14,7 @@ int main(){
     a.push_back(23);
     int x = a.size();
 
-    sort(a.begin,a.end());
+    sort(a.begin(),a.end());
     
     return 0;
 }
