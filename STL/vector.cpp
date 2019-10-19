@@ -12,10 +12,15 @@ int main(){
     a.push_back(10);
     a.pop_back();
     a.push_back(23);
+    a.push_back(23);
+    a.push_back(23);
+    a.push_back(23);
     int x = a.size();
 
     sort(a.begin(),a.end());
+    
     vector<int>::iterator it = lower_bound(a.begin(),a.end(),23);
+    vector<int>::iterator it2 = upper_bound(a.begin(),a.end(),23);
     
     return 0;
 }
