@@ -22,7 +22,10 @@ int main(){
     vector<int>::iterator it = lower_bound(a.begin(),a.end(),23);
     vector<int>::iterator it2 = upper_bound(a.begin(),a.end(),23);
 
-    sort(a.bgin(),a.end(),greater<int>());
+    sort(a.begin(),a.end(),greater<int>());
+    cout<<x<<endl;
+    for (auto b : a)
+    cout<<b<<" ";
     
     return 0;
 }

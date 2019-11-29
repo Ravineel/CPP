@@ -1,27 +1,19 @@
 {
-    "version": "2.0.0",
     "tasks": [
-      {
-        "label": "Compiling",
-        "type": "shell",
-        "command": "g++",
-        "args": ["-g", "-o", "${file}","${workspaceRoot}\\${fileBasename}.exe"],
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": {
-            "owner": "cpp",
-            "fileLocation": ["relative", "${workspaceRoot}"],
-            "pattern": {
-                "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-                "file": 1,
-                "line": 2,
-                "column": 3,
-                "severity": 4,
-                "message": 5
+        {
+            "type": "shell",
+            "label": "g++.exe build active file",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
             }
         }
-      }
-    ]
-  }
+    ],
+    "version": "2.0.0"
+}
