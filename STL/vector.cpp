@@ -10,13 +10,16 @@ int main(){
 
     vector<int>a;
     a.push_back(10);
-    a.pop_back();
+    //a.pop_back();
     a.push_back(23);
     a.push_back(23);
     a.push_back(23);
     a.push_back(23);
     int x = a.size();
-
+    int y;
+   
+   cin>>y;
+   cout<<y;
     sort(a.begin(),a.end());
     
     vector<int>::iterator it = lower_bound(a.begin(),a.end(),23);
