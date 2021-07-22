@@ -33,8 +33,8 @@ int main(){
     list<int> :: iterator it = find(List1.begin(),List1.end(),x);
     //it will have the position to the element
 
-    // to reverse a list
-
+    // to reverse a Blist
+    cout<<*it;
     List1.reverse();
 
     //to sort a list
